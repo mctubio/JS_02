@@ -1,0 +1,39 @@
+<!-- Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento. 
+    Cada cuadrado debera tener un color distinto. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejer_01</title>
+    <link rel="stylesheet" href="style_01.css" />
+  </head>
+  <body>
+    <h2>Cuadrados que cambian el background</h2>
+    <p>
+      <button id="verde" onclick="cambiarVerde()"></button>
+      <button id="amarillo" onclick="cambiarAmarillo()"></button>
+      <button id="violeta" onclick="cambiarVioleta()"></button>
+    </p>
+    <script>
+
+      function cambiarVerde() {
+        let body = document.getElementsByTagName("body")[0];
+        body.style.backgroundColor = 'rgb(173,255,47';
+        body.style.color='rgb(0,0,0)'
+      }
+      function cambiarAmarillo() {
+        let body = document.getElementsByTagName("body")[0];
+        body.style.backgroundColor = 'rgb(255,255,0';
+        body.style.color='rgb(0,0,0)'
+      }
+      function cambiarVioleta() {
+        let body = document.getElementsByTagName("body")[0];
+        body.style.backgroundColor = 'rgb(138,43,226';
+        body.style.color='rgb(255,255,255)'
+      }
+
+    </script>
+  </body>
+</html>

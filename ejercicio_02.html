@@ -1,0 +1,35 @@
+<!-- Programar un contador de caracteres para un textarea. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejer_02</title>
+    <link rel="stylesheet" href="style_02.css">
+  </head>
+  <body>
+    <h2>Contador de carácteres</h2>
+    <textarea
+      id="contador"
+      onpaste="contador();"
+      onkeyup="contador();"
+    ></textarea>
+    <div id="resultado">0 caracteres</div>
+
+    <script>
+      function contador() {
+        var total = 150;
+        var valor = document.getElementById("contador");
+        var respuesta = document.getElementById("resultado");
+        var cantidad = valor.value.length;
+        if (cantidad < 150) {
+          document.getElementById("resultado").innerHTML =
+            cantidad + "/" + (total - cantidad);
+        } else {
+          alert("NO SE PERMITEN MÁS CARÁCTERES");
+        }
+      }
+    </script>
+  </body>
+</html>

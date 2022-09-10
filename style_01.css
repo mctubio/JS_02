@@ -1,0 +1,18 @@
+
+button{
+    width: 200px;
+    height: 200px;
+    border: none;
+}
+
+#verde{
+    background-color: greenyellow;
+}
+
+#amarillo{
+    background-color: yellow;
+}
+
+#violeta{
+    background-color: blueviolet;
+}
